@@ -1,37 +1,16 @@
 ---
-version: 1.4.4
-slug: test
-name: Test
-description: Test
-url: https://github.com/home-assistant/hassio-addons/tree/master/dnsmasq
+version: 1.0.0
+slug: ecocomfort-broker
+name: Ecocomfort Broker
+description: Ecocomfort Broker
+url: https://github.com/fabiocastagnino/home-assistant-addons/tree/main/ecocomfort-broker
 advanced: true
 arch:
   - aarch64
-image: homeassistant/aarch64-addon-dnsmasq
+image: fabiocastagnino/homeassistant-addon-intelliclima-broker
 init: false
 options:
-  defaults:
-    - 8.8.8.8
-    - 8.8.4.4
-  forwards: []
-  hosts: []
-  services: []
 ports:
-  53/tcp: 53
-  53/udp: 53
+  1084/tcp: 1084
 schema:
-  defaults:
-    - str
-  forwards:
-    - domain: str
-      server: str
-  hosts:
-    - host: str
-      ip: str
-  services:
-    - host: str
-      port: str
-      priority: int
-      srv: str
-      weight: int
 startup: system
