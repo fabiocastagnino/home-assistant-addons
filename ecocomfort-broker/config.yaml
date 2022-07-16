@@ -1,16 +1,19 @@
----
+name: Ecocomfort Broker add-on
 version: 1.0.0
 slug: ecocomfort-broker
-name: Ecocomfort Broker
 description: Ecocomfort Broker
 url: https://github.com/fabiocastagnino/home-assistant-addons/tree/main/ecocomfort-broker
-advanced: true
 arch:
   - aarch64
-image: fabiocastagnino/homeassistant-addon-intelliclima-broker
+advanced: true
 init: false
+map:
+  - share:rw
 options:
+  message: "Hello world..."
+schema:
+  message: "str?"
 ports:
   1084/tcp: 1084
-schema:
 startup: system
+image: fabiocastagnino/homeassistant-addon-intelliclima-broker

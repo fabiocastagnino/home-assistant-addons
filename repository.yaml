@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Fabio Castagnino Add-ons
+url: 'https://github.com/fabiocastagnino/home-assistant-addons'
+maintainer: Fabio Castagnino <fabio.castagnino@outlook.it>
