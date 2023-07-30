@@ -5,6 +5,7 @@ description: Ecocomfort Broker
 url: https://github.com/fabiocastagnino/home-assistant-addons/tree/main/ecocomfort-broker
 arch:
   - aarch64
+  - amd64
 advanced: true
 init: false
 map:
